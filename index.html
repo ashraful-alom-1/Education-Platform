@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Education Academy</title>
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-links">
+            <!-- Navigation links -->
+            <a href="#math">Math</a>
+            <a href="#science">Science</a>
+            <a href="#languages">Languages</a>
+            <a href="#arts">Arts</a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">search</span> <!-- Search icon -->
+            <input class="search_input" placeholder="Search courses"> <!-- Search input field -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Background video -->
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4"> <!-- Video source -->
+        </video>
+
+        <!-- Hero content -->
+        <div class="hero-content">
+            <h1>Welcome to EDUCATION ACADEMY</h1> <!-- Main heading -->
+            <p id="tagline">Learn at your own pace.</p> <!-- Tagline -->
+            <button onclick="window.location.href='#courses'">Get Started</button> <!-- Call-to-action button -->
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="featured-courses" id="courses">
+        <h2>Featured Courses</h2> <!-- Section heading -->
+
+        <!-- Course cards container -->
+        <div class="course-cards">
+            <!-- Mathematics course card -->
+            <div class="course-card">
+                <img src="maths.jpg" alt="Mathematics"> <!-- Course image -->
+                <h3>Mathematics</h3> <!-- Course title -->
+                <p>Instructor: instructor name</p> <!-- Instructor name -->
+            </div>
+
+            <!-- Science course card -->
+            <div class="course-card">
+                <img src="science.jpg" alt="Science"> <!-- Course image -->
+                <h3>General Science</h3> <!-- Course title -->
+                <p>Instructor: instructor name</p> <!-- Instructor name -->
+            </div>
+
+            <!-- Languages course card -->
+            <div class="course-card">
+                <img src="language.jpg" alt="Languages"> <!-- Course image -->
+                <h3>Languages</h3> <!-- Course title -->
+                <p>Instructor: instructor name</p> <!-- Instructor name -->
+            </div>
+
+            <!-- Drawing course card -->
+            <div class="course-card">
+                <img src="drawing.jpg" alt="Drawing"> <!-- Course image -->
+                <h3>Drawing</h3> <!-- Course title -->
+                <p>Instructor: instructor name</p> <!-- Instructor name -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section class="learning-paths fade-in">
+        <h2>Learning Paths</h2> <!-- Section heading -->
+
+        <!-- Button to start the quiz -->
+        <button onclick="startQuiz()">Start Quiz</button>
+
+        <!-- Quiz container -->
+        <div id="quiz-container" class="quiz-container">
+            <div id="quiz"></div> <!-- Quiz questions will be dynamically inserted here -->
+            <button id="submit-btn" onclick="submitQuiz()">Submit Quiz</button> <!-- Submit button -->
+            <div id="results"></div> <!-- Quiz results will be displayed here -->
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories fade-in">
+        <h2>Success Stories</h2> <!-- Section heading -->
+
+        <!-- Testimonials container -->
+        <div class="testimonial-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <p>"Education Academy helped me achieve my goals!"</p> <!-- Testimonial text -->
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <p>"Highly recommend Education Academy!"</p> <!-- Testimonial text -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <!-- Footer links -->
+            <a href="#blog">Blog</a>
+            <a href="#faq">FAQ</a>
+            <a href="#privacy-policy">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scrippt.js"></script>
+</body>
+</html>
